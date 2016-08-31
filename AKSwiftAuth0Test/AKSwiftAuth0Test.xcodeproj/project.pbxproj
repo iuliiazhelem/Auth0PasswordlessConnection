@@ -22,6 +22,7 @@
 		228153641D4795D000F030F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		228153671D4795D000F030F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		228153691D4795D000F030F0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		228CDCAD1D672E9200FA2CA7 /* AKSwiftAuth0Test.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = AKSwiftAuth0Test.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -44,6 +45,7 @@
 		2281535C1D4795D000F030F0 /* AKSwiftAuth0Test */ = {
 			isa = PBXGroup;
 			children = (
+				228CDCAD1D672E9200FA2CA7 /* AKSwiftAuth0Test.entitlements */,
 				2281535D1D4795D000F030F0 /* AppDelegate.swift */,
 				2281535F1D4795D000F030F0 /* ViewController.swift */,
 				228153611D4795D000F030F0 /* Main.storyboard */,
@@ -85,6 +87,12 @@
 				TargetAttributes = {
 					228153591D4795D000F030F0 = {
 						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = 285W24646W;
+						SystemCapabilities = {
+							com.apple.SafariKeychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -241,6 +249,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AKSwiftAuth0Test/AKSwiftAuth0Test.entitlements;
 				INFOPLIST_FILE = AKSwiftAuth0Test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.auth0.AKSwiftAuth0Test;
@@ -252,6 +261,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = AKSwiftAuth0Test/AKSwiftAuth0Test.entitlements;
 				INFOPLIST_FILE = AKSwiftAuth0Test/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.auth0.AKSwiftAuth0Test;
